@@ -1,0 +1,19 @@
+---
+get:
+  operationId: get-catalog-categories
+  summary: "Lists all categories"
+  description: "Rate limit: 24 request(s) in 3600 second(s)"
+
+  tags:
+    - Catalog API
+
+  responses: {
+    $ref: "../../../responses/responses.yaml"
+  }
+
+parameters:
+  # path parameters
+  - $ref: '../../../base.yaml#/components/parameters/_format'
+
+  # query parameters
+  - $ref: '../../../base.yaml#/components/parameters/isoCode'

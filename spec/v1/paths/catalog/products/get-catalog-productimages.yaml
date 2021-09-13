@@ -1,0 +1,17 @@
+---
+get:
+  operationId: get-catalog-productimages
+  summary: Get a single product images
+  description: "Rate limit: 1 request(s) in 5 second(s)"
+
+  tags:
+    - Catalog API
+
+  responses: {
+    $ref: "../../../responses/responses.yaml"
+  }
+
+parameters:
+  # path parameters
+  - $ref: "../../../base.yaml#/components/parameters/id"
+  - $ref: "../../../base.yaml#/components/parameters/_format"

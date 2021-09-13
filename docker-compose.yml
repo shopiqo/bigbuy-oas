@@ -1,0 +1,24 @@
+---
+version: "3.7"
+
+services:
+  cli:
+    restart: "no"
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ${PWD}:/app
+
+  ui:
+    image: swaggerapi/swagger-ui:v3.46.0
+    ports:
+      - 8080:8080
+    volumes:
+      - ${PWD}/dist:/usr/share/nginx/html/public
+    environment:
+      API_URL: public/v1/openapi.yaml
+      VALIDATOR_URL: "none"
+      TRY_IT_OUT_ENABLED: "true"
+      DISPLAY_REQUEST_DURATION: "true"
+      DISPLAY_OPERATION_ID: "true"

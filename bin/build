@@ -1,0 +1,13 @@
+#!/bin/bash -e
+
+docker-compose --project-directory ../ run --rm cli bundle \
+    spec/v1/base.yaml \
+    -r \
+    -t yaml \
+    -o dist/v1/openapi.yaml
+
+docker-compose --project-directory ../ run --rm cli bundle \
+    spec/v1/base.yaml \
+    -r \
+    -t json \
+    -o dist/v1/openapi.json

@@ -1,0 +1,20 @@
+---
+get:
+  operationId: get-catalog-productinformationbysku
+  summary: Get a single product by sku
+  description: "Rate limit: 1 request(s) in 5 second(s)"
+
+  tags:
+    - Catalog API
+
+  responses: {
+    $ref: "../../../responses/responses.yaml"
+  }
+
+parameters:
+  # path parameters
+  - $ref: "../../../base.yaml#/components/parameters/sku"
+  - $ref: "../../../base.yaml#/components/parameters/_format"
+
+  # query parameters
+  - $ref: "../../../base.yaml#/components/parameters/isoCode"

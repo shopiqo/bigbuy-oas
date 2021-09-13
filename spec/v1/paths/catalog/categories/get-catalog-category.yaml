@@ -1,0 +1,20 @@
+---
+get:
+  operationId: get-catalog-category
+  summary: "Returns the selected category"
+  description: "Rate limit: 1 request(s) in 5 second(s)"
+
+  tags:
+    - Catalog API
+
+  responses: {
+    $ref: "../../../responses/responses.yaml"
+  }
+
+parameters:
+  # path parameters
+  - $ref: "../../../base.yaml#/components/parameters/id"
+  - $ref: "../../../base.yaml#/components/parameters/_format"
+
+  # query parameters
+  - $ref: '../../../base.yaml#/components/parameters/isoCode'
