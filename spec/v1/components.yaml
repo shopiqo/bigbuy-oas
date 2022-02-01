@@ -1,0 +1,9 @@
+---
+parameters:
+  $ref: './parameters/parameters.yaml'
+schemas: {}
+#   $ref: "./schemas/_index.yaml"
+securitySchemes:
+  $ref: "./securitySchemes/_index.yaml"
+# responses:
+#   $ref: "./responses/.yaml"

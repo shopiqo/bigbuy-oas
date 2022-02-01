@@ -1,0 +1,7 @@
+---
+name: platformVersion
+description: Platform version
+in: query
+required: false
+schema:
+  type: string

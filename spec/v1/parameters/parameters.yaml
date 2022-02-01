@@ -15,10 +15,19 @@ accept:
 
 # query
 isoCode:
-  $ref: './query/isoCode.yaml'
+  $ref: './query/filters/isoCode.yaml'
 
 page:
-  $ref: './query/page.yaml'
+  $ref: './query/filters/page.yaml'
 
 pageSize:
-  $ref: './query/pageSize.yaml'
+  $ref: './query/filters/pageSize.yaml'
+
+moduleName:
+  $ref: './query/filters/moduleName.yaml'
+
+platform:
+  $ref: './query/filters/platform.yaml'
+
+platformVersion:
+  $ref: './query/filters/platformVersion.yaml'

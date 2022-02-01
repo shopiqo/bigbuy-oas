@@ -1,26 +1,17 @@
 ---
 openapi: 3.0.0
+
 info:
-  title: BigBuy API
-  version: v202102
-  description: OpenAPI spefication to interact with bigbuy.eu
+  $ref: './info.yaml'
+
 servers:
-  - url: 'https://api.bigbuy.eu'
-    description: Production endpoint
-  - url: 'https://api.sandbox.bigbuy.eu'
-    description: Sandbox endpoint
+  $ref: './servers.yaml'
 
 paths:
-  $ref: './paths/paths.yaml'
+  $ref: './paths.yaml'
 
 components:
-  parameters:
-    $ref: './parameters/parameters.yaml'
-  schemas: {}
-  #   $ref: "./schemas/_index.yaml"
-  securitySchemes:
-    $ref: "./securitySchemes/_index.yaml"
-  # responses:
-  #   $ref: "./responses/.yaml"
+  $ref: './components.yaml'
+
 security:
-  - API_KEY: []
+  $ref: './security.yaml'

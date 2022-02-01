@@ -1255,6 +1255,140 @@
         }
       ]
     },
+    "/rest/module/.{_format}": {
+      "get": {
+        "operationId": "get-all-modules",
+        "summary": "Get all Modules",
+        "description": "Rate limit: 1 request(s) in 1 second(s)",
+        "tags": [
+          "Module API"
+        ],
+        "responses": {
+          "200": {
+            "description": "Returned when successful"
+          },
+          "404": {
+            "description": "Returned when requested object was not found"
+          },
+          "415": {
+            "description": "Returned on invalid Content-Type header"
+          },
+          "429": {
+            "description": "Exceeded requests limits"
+          }
+        }
+      },
+      "parameters": [
+        {
+          "name": "_format",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "enum": [
+              "json",
+              "xml",
+              "html"
+            ],
+            "example": "json",
+            "default": "json"
+          }
+        },
+        {
+          "name": "name",
+          "description": "Module name",
+          "in": "query",
+          "required": false,
+          "schema": {
+            "type": "string"
+          }
+        },
+        {
+          "name": "platform",
+          "description": "Platform name",
+          "in": "query",
+          "required": false,
+          "schema": {
+            "type": "string"
+          }
+        },
+        {
+          "name": "platformVersion",
+          "description": "Platform version",
+          "in": "query",
+          "required": false,
+          "schema": {
+            "type": "string"
+          }
+        }
+      ]
+    },
+    "/rest/module/platforms.{_format}": {
+      "get": {
+        "operationId": "get-all-modules-platforms",
+        "summary": "Get all module platforms",
+        "description": "Rate limit: 1 request(s) in 1 second(s)",
+        "tags": [
+          "Module API"
+        ],
+        "responses": {
+          "200": {
+            "description": "Returned when successful"
+          },
+          "404": {
+            "description": "Returned when requested object was not found"
+          },
+          "415": {
+            "description": "Returned on invalid Content-Type header"
+          },
+          "429": {
+            "description": "Exceeded requests limits"
+          }
+        }
+      },
+      "parameters": [
+        {
+          "name": "_format",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "enum": [
+              "json",
+              "xml",
+              "html"
+            ],
+            "example": "json",
+            "default": "json"
+          }
+        },
+        {
+          "name": "name",
+          "description": "Module name",
+          "in": "query",
+          "required": false,
+          "schema": {
+            "type": "string"
+          }
+        },
+        {
+          "name": "platform",
+          "description": "Platform name",
+          "in": "query",
+          "required": false,
+          "schema": {
+            "type": "string"
+          }
+        },
+        {
+          "name": "platformVersion",
+          "description": "Platform version",
+          "in": "query",
+          "required": false,
+          "schema": {
+            "type": "string"
+          }
+        }
+      ]
+    },
     "/rest/order/addresses/new.{_format}": {
       "get": {
         "operationId": "get-order-shipping-address-structure",
@@ -1262,6 +1396,126 @@
         "description": "Rate limit: 1 request(s) in 1 second(s)",
         "tags": [
           "Order API"
+        ],
+        "responses": {
+          "200": {
+            "description": "Returned when successful"
+          },
+          "404": {
+            "description": "Returned when requested object was not found"
+          },
+          "415": {
+            "description": "Returned on invalid Content-Type header"
+          },
+          "429": {
+            "description": "Exceeded requests limits"
+          }
+        }
+      },
+      "parameters": [
+        {
+          "name": "_format",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "enum": [
+              "json",
+              "xml",
+              "html"
+            ],
+            "example": "json",
+            "default": "json"
+          }
+        }
+      ]
+    },
+    "/rest/order/carriers/new.{_format}": {
+      "get": {
+        "operationId": "get-order-carriers-structure",
+        "summary": "Get order carriers structure",
+        "description": "Rate limit: 1 request(s) in 1 second(s)",
+        "tags": [
+          "Order API"
+        ],
+        "responses": {
+          "200": {
+            "description": "Returned when successful"
+          },
+          "404": {
+            "description": "Returned when requested object was not found"
+          },
+          "415": {
+            "description": "Returned on invalid Content-Type header"
+          },
+          "429": {
+            "description": "Exceeded requests limits"
+          }
+        }
+      },
+      "parameters": [
+        {
+          "name": "_format",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "enum": [
+              "json",
+              "xml",
+              "html"
+            ],
+            "example": "json",
+            "default": "json"
+          }
+        }
+      ]
+    },
+    "/rest/shipping/carriers.{_format}": {
+      "get": {
+        "operationId": "get-the-list-of-available-carriers",
+        "summary": "Get the list of available carriers",
+        "description": "Rate limit: 1 request(s) in 1 second(s)",
+        "tags": [
+          "Shipping API"
+        ],
+        "responses": {
+          "200": {
+            "description": "Returned when successful"
+          },
+          "404": {
+            "description": "Returned when requested object was not found"
+          },
+          "415": {
+            "description": "Returned on invalid Content-Type header"
+          },
+          "429": {
+            "description": "Exceeded requests limits"
+          }
+        }
+      },
+      "parameters": [
+        {
+          "name": "_format",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "enum": [
+              "json",
+              "xml",
+              "html"
+            ],
+            "example": "json",
+            "default": "json"
+          }
+        }
+      ]
+    },
+    "/rest/tracking/carriers.{_format}": {
+      "get": {
+        "operationId": "get-the-list-of-available-trackings",
+        "summary": "Get the list of available trackings",
+        "description": "Rate limit: 1 request(s) in 1 second(s)",
+        "tags": [
+          "Tracking API"
         ],
         "responses": {
           "200": {
@@ -1364,6 +1618,33 @@
         "required": true,
         "schema": {
           "type": "integer"
+        }
+      },
+      "moduleName": {
+        "name": "name",
+        "description": "Module name",
+        "in": "query",
+        "required": false,
+        "schema": {
+          "type": "string"
+        }
+      },
+      "platform": {
+        "name": "platform",
+        "description": "Platform name",
+        "in": "query",
+        "required": false,
+        "schema": {
+          "type": "string"
+        }
+      },
+      "platformVersion": {
+        "name": "platformVersion",
+        "description": "Platform version",
+        "in": "query",
+        "required": false,
+        "schema": {
+          "type": "string"
         }
       }
     },

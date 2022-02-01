@@ -1,0 +1,7 @@
+---
+name: name
+description: Module name
+in: query
+required: false
+schema:
+  type: string

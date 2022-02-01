@@ -1,0 +1,21 @@
+---
+get:
+  operationId: get-all-modules-platforms
+  summary: "Get all module platforms"
+  description: "Rate limit: 1 request(s) in 1 second(s)"
+
+  tags:
+    - Module API
+
+  responses: {
+    $ref: "../../responses/responses.yaml"
+  }
+
+parameters:
+  # path parameters
+  - $ref: "../../base.yaml#/components/parameters/_format"
+
+  # query parameters
+  - $ref: "../../base.yaml#/components/parameters/moduleName"
+  - $ref: "../../base.yaml#/components/parameters/platform"
+  - $ref: "../../base.yaml#/components/parameters/platformVersion"

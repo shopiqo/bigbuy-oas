@@ -1,0 +1,96 @@
+---
+# ATTRIBUTES
+'/rest/catalog/attributes.{_format}':
+  $ref: './paths/catalog/attributes/get-catalog-attributes.yaml'
+
+'/rest/catalog/attribute/{id}.{_format}':
+  $ref: './paths/catalog/attributes/get-catalog-attribute.yaml'
+
+'/rest/catalog/attributealllanguages/{id}.{_format}':
+  $ref: './paths/catalog/attributes/get-catalog-attributealllanguages.yaml'
+
+'/rest/catalog/attributegroups.{_format}':
+  $ref: './paths/catalog/attributes/get-catalog-attributegroups.yaml'
+
+'/rest/catalog/attributegroup/{id}.{_format}':
+  $ref: './paths/catalog/attributes/get-catalog-attributegroup.yaml'
+
+'/rest/catalog/attributegroupalllanguages/{id}.{_format}':
+  $ref: './paths/catalog/attributes/get-catalog-attributegroupalllanguages.yaml'
+
+# CATEGORIES
+'/rest/catalog/categories.{_format}':
+  $ref: './paths/catalog/categories/get-catalog-categories.yaml'
+
+'/rest/catalog/category/{id}.{_format}':
+  $ref: './paths/catalog/categories/get-catalog-category.yaml'
+
+'/rest/catalog/categoryalllanguages/{id}.{_format}':
+  $ref: './paths/catalog/categories/get-catalog-categoryalllanguages.yaml'
+
+# LANGUAGES
+'/rest/catalog/languages.{_format}':
+  $ref: './paths/catalog/languages/get-catalog-languages.yaml'
+
+# MANUFACTURERS
+'/rest/catalog/manufacturers.{_format}':
+  $ref: './paths/catalog/manufacturers/get-catalog-manufacturers.yaml'
+
+'/rest/catalog/manufacturer/{id}.{_format}':
+  $ref: './paths/catalog/manufacturers/get-catalog-manufacturer.yaml'
+
+# PRODUCTS
+'/rest/catalog/products.{_format}':
+  $ref: './paths/catalog/products/get-catalog-products.yaml'
+
+'/rest/catalog/product/{id}.{_format}':
+  $ref: './paths/catalog/products/get-catalog-product.yaml'
+
+'/rest/catalog/productcategories/{id}.{_format}':
+  $ref: './paths/catalog/products/get-catalog-productcategories.yaml'
+
+'/rest/catalog/productimages/{id}.{_format}':
+  $ref: './paths/catalog/products/get-catalog-productimages.yaml'
+
+'/rest/catalog/productinformation/{id}.{_format}':
+  $ref: './paths/catalog/products/get-catalog-productinformation.yaml'
+
+'/rest/catalog/productinformationalllanguages/{id}.{_format}':
+  $ref: './paths/catalog/products/get-catalog-productinformationalllanguages.yaml'
+
+'/rest/catalog/productinformationbysku/{sku}.{_format}':
+  $ref: './paths/catalog/products/get-catalog-productinformationbysku.yaml'
+
+'/rest/catalog/productsinformation.{_format}':
+  $ref: './paths/catalog/products/get-catalog-productsinformation.yaml'
+
+'/rest/catalog/productsstock.{_format}':
+  $ref: './paths/catalog/products/get-catalog-productsstock.yaml'
+
+'/rest/catalog/productsstockavailable.{_format}':
+  $ref: './paths/catalog/products/get-catalog-productsstockavailable.yaml'
+
+'/rest/catalog/productsstockbyreference.{_format}':
+  $ref: './paths/catalog/products/get-catalog-productsstockbyreference.yaml'
+
+# Module API
+'/rest/module/.{_format}':
+  $ref: './paths/module/get-all-modules.yaml'
+
+'/rest/module/platforms.{_format}':
+  $ref: './paths/module/get-all-module-platforms.yaml'
+
+# Order API
+'/rest/order/addresses/new.{_format}':
+  $ref: './paths/order/get-order-shipping-address-structure.yaml'
+
+'/rest/order/carriers/new.{_format}':
+  $ref: './paths/order/get-order-carriers-structure.yaml'
+
+# Shipping API
+'/rest/shipping/carriers.{_format}':
+  $ref: './paths/shipping/get-list-of-available-carriers.yaml'
+
+# Tracking API
+'/rest/tracking/carriers.{_format}':
+  $ref: './paths/tracking/get-the-list-of-available-trackings.yaml'

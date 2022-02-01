@@ -1,0 +1,6 @@
+---
+'/rest/order/addresses/new.{_format}':
+  $ref: './order/get-order-shipping-address-structure.yaml'
+
+'/rest/order/carriers/new.{_format}':
+  $ref: './order/get-order-carriers-structure.yaml'

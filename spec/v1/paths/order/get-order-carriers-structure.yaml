@@ -1,0 +1,16 @@
+---
+get:
+  operationId: get-order-carriers-structure
+  summary: "Get order carriers structure"
+  description: "Rate limit: 1 request(s) in 1 second(s)"
+
+  tags:
+    - Order API
+
+  responses: {
+    $ref: "../../responses/responses.yaml"
+  }
+
+parameters:
+  # path parameters
+  - $ref: "../../base.yaml#/components/parameters/_format"

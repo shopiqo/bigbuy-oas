@@ -1,0 +1,6 @@
+---
+'/rest/catalog/attributes.{_format}':
+  $ref: './catalog/attributes/get-catalog-attributes.yaml'
+
+'/rest/catalog/attribute/{id}.{_format}':
+  $ref: './catalog/attributes/get-catalog-attribute.yaml'

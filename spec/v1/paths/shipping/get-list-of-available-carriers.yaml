@@ -1,0 +1,16 @@
+---
+get:
+  operationId: get-the-list-of-available-carriers
+  summary: "Get the list of available carriers"
+  description: "Rate limit: 1 request(s) in 1 second(s)"
+
+  tags:
+    - Shipping API
+
+  responses: {
+    $ref: "../../responses/responses.yaml"
+  }
+
+parameters:
+  # path parameters
+  - $ref: "../../base.yaml#/components/parameters/_format"

@@ -1,12 +1,14 @@
 #!/bin/bash -e
 
-docker-compose --project-directory ../ run --rm cli bundle \
+#docker run --rm -v `pwd`/spec/v1:/app iermentraut/yaml-include base.yaml openapi.yaml
+
+docker-compose run --rm cli bundle \
     spec/v1/base.yaml \
     -r \
     -t yaml \
     -o dist/v1/openapi.yaml
 
-docker-compose --project-directory ../ run --rm cli bundle \
+docker-compose run --rm cli bundle \
     spec/v1/base.yaml \
     -r \
     -t json \

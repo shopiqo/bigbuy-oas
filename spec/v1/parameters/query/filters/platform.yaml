@@ -1,0 +1,7 @@
+---
+name: platform
+description: Platform name
+in: query
+required: false
+schema:
+  type: string

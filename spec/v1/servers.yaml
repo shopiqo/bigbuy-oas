@@ -1,0 +1,5 @@
+---
+- url: 'https://api.bigbuy.eu'
+  description: Production endpoint
+- url: 'https://api.sandbox.bigbuy.eu'
+  description: Sandbox endpoint
